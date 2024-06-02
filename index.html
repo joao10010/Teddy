@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil do Cachorro</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e2f1f8;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .dog-photo {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 5px solid #ffd700;
+  }
+  .dog-info {
+    margin-top: 20px;
+    background-color: #fff0f5;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .dog-info h2 {
+    color: #ff4500;
+    margin-bottom: 5px;
+  }
+  .dog-info p {
+    color: #555555;
+    line-height: 1.6;
+  }
+  .dog-info .label {
+    font-weight: bold;
+    color: #008000;
+  }
+
+  /* Media queries para ajustar o layout em telas menores */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      margin: 20px auto;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+    .dog-info {
+      padding: 8px;
+    }
+    .dog-info h2 {
+      font-size: 1.2em;
+    }
+    .dog-info p {
+      font-size: 0.9em;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Bem-vindo ao Perfil do Cachorro!</h1>
+  <p>Nosso projeto nasceu na Faculdade Anhembi Morumbi, em São Paulo, com a ideia de facilitar a vida das ONGs e 
+    eventos de adoção de cachorros. Observamos que a falta de voluntários 
+    nesses eventos pode dificultar o processo de adoção, então criamos uma solução inovadora: 
+    QR codes com informações detalhadas sobre cada cãozinho disponível para adoção. Assim, os visitantes podem acessar 
+    todas as informações necessárias de forma rápida e prática, suprindo a necessidade de voluntários e aumentando as 
+    chances dos cães encontrarem um lar amoroso.
+    </p>
+  <img src="cachorroNycolas.jfif" alt="Foto do Cachorro" class="dog-photo">
+  <div class="dog-info">
+    <h2>Nome: Teddy</h2>
+    <p><span class="label">Idade:</span> 3 anos</p>
+    <p><span class="label">Raça:</span> SRD</p>
+    <p><span class="label">Hobbies:</span> Passear e brincar de bolinha .</p>
+    <p><span class="label">História:</span>  Nascido em Tijucas do Sul - PR, foi adotado e atualmente mora em Sp.</p>
+  </div>
+</div>
+
+</body>
+</html>
